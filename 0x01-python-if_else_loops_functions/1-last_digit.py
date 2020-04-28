@@ -9,6 +9,6 @@ else:
 if modul > 5:
     print("Last digit of {} is {} and is greater than 5".format(number, modul))
 elif modul == 0:
-    print("Last digit of {} is {} and is greater than 5".format(number, modul))
+    print("Last digit of {} is {} and is 0".format(number, modul))
 else:
     print("Last digit of", number, "is", modul, "and is less than 6 and not 0")
