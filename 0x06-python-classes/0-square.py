@@ -3,4 +3,5 @@
 
 
 class Square:
+    """Class square defined"""
     pass
