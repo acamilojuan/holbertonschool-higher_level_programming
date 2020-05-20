@@ -42,5 +42,5 @@ class Square:
         """Method to print the square with # character"""
         if self.__size == 0:
             print()
-        for i in range(0, self.__size):
+        for a in range(0, self.__size):
             print("#" * self.__size)
