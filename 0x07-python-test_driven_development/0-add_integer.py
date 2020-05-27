@@ -1,17 +1,15 @@
 #!/usr/bin/python3
-
-"""Function that returns the sum of two intigers
-"""
+"Function to return the add of teo integers"
 
 
 def add_integer(a, b=98):
-    """Args:
-        a (int) first argument must be integer or float
-        b (int) second argument must be integer or float
+    """Arguments:
+    a = Type integer
+    b = Type integer
     """
-    if type(a) not in [int, float]:
+    if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
-    if type(b) not in [int, float]:
+    if type(b) is not int and type(b) is not float:
         raise TypeError("b must be an integer")
     if type(a) is float('inf') or type(b) is float('inf'):
         raise OverflowError("cannot convert float infinity to integer")
