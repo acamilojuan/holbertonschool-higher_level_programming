@@ -1,7 +1,7 @@
 """Importing module print_square"""
 >>> print_square = __import__('4-print_square').print_square
 
-# To check the data
+# To check the datas
 
 >>> print_square(3)
 ###
