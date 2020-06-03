@@ -3,14 +3,14 @@ IMPORT
 
 TESTS
 
-Test 1: Checks empty list
+Test 0: Checks empty list
     >>> temp = MyList()
     >>> print(temp)
     []
     >>> temp.print_sorted()
     []
 
-Test 2: Checks print
+Test 1: Checks print
     >>> my_list = MyList()
     >>> my_list.append(6)
     >>> my_list.append(1)
@@ -19,21 +19,21 @@ Test 2: Checks print
     >>> print(my_list)
     [6, 1, 4, 8]
     >>> my_list.print_sorted()
-    [1, 8, 4, 6]
+    [1, 4, 6, 8]
     >>> print(my_list)
     [6, 1, 4, 8]
 
-Test 3: issubclass(type(object), list)
+Test 2: issubclass(type(object), list)
     >>> temp = MyList()
     >>> issubclass(type(temp), list)
     True
 
-Test 4: isinstance(object, list)
+Test 3: isinstance(object, list)
     >>> temp = MyList()
     >>> isinstance(temp, list)
     True
 
-Test 5: Negative numbers in a list
+Test 4: Negative numbers in a list
     >>> temp = MyList()
     >>> temp.append(-3)
     >>> temp.append(-18)
