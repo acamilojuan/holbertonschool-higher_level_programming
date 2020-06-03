@@ -5,7 +5,7 @@ TESTS
  
 Test0:
         >>> bg = BaseGeometry()
-        >>> bg.integer_validator("my_int", "car")
+        >>> bg.integer_validator("my_int", "Florida")
         Traceback (most recent call last):
         TypeError: my_int must be an integer
 
@@ -15,7 +15,7 @@ Test1:
         ValueError: age must be greater than 0
 
 Test2:
-        >>> bg.integer_validator("distance", -4)
+        >>> bg.integer_validator("distance", -18)
         Traceback (most recent call last):
         ValueError: distance must be greater than 0
 
@@ -30,29 +30,20 @@ Test4:
         TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 Test5:
-        >>> bg.integer_validator("age", 1)
+        >>> bg.integer_validator("age", 6)
 
 Test6:
-        >>> bg.integer_validator("age", (4,))
+        >>> bg.integer_validator("age", ())
         Traceback (most recent call last):
         TypeError: age must be an integer
 
 Test7:
-        >>> bg.integer_validator("age", [3])
-        Traceback (most recent call last):
-        TypeError: age must be an integer
-
-Test7:
-        >>> bg.integer_validator("age", True)
+        >>> bg.integer_validator("age", [])
         Traceback (most recent call last):
         TypeError: age must be an integer
 
 Test8:
-        >>> bg.integer_validator("age", {3,4})
+        >>> bg.integer_validator("age", {})
         Traceback (most recent call last):
         TypeError: age must be an integer
-
-Test9:
-        >>> bg.integer_validator("age", None)
-        Traceback (most recent call last):
-        TypeError: age must be an integer
+        
