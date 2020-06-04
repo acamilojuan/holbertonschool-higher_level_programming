@@ -23,12 +23,3 @@ TEST
 		.
 		<BLANKLINE>
 		?
-
-3: Empty string in stdin 1
-		>>> text_indentation("")
-
-4: Empty string in stdin 2
-		>>> text_indentation()
-		Traceback (most recent call last):
-			...
-		TypeError: text_indentation() missing 1 required positional argument: 'text'
