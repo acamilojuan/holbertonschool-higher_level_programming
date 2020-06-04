@@ -3,14 +3,14 @@ IMPORT
 
 TEST
 
-0: User sends an integer
-		>>> text_indentation(4)
+0: Integer in stdin
+		>>> text_indentation(2)
 		Traceback (most recent call last):
 			...
 		TypeError: text must be a string
 
-1: User sends an float
-		>>> text_indentation(3.8)
+1: Float in stdin
+		>>> text_indentation(6.7)
 		Traceback (most recent call last):
 			...
 		TypeError: text must be a string
