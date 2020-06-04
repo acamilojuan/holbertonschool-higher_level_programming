@@ -16,10 +16,16 @@ TEST
 		TypeError: text must be a string
 
 2: Text with special chars
-		>>> text_1 = "Juan:.?"
-		>>> text_indentation(text_1)
+		>>> text = "Juan:.?"
+		>>> text_indentation(text)
 		Juan:
 		<BLANKLINE>
 		.
 		<BLANKLINE>
 		?
+
+3: Empty string in stdin
+		>>> text_indentation()
+		Traceback (most recent call last):
+			...
+		TypeError: text_indentation() missing 1 required positional argument: 'text'
