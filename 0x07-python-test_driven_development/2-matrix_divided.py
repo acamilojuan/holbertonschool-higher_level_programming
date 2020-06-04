@@ -3,10 +3,10 @@
 
 
 def matrix_divided(matrix, div):
-    """Method to divide the objents
+    """Method to divide the objects
     Arguments: matrix, div.
     Raises: Errors depends on the case.
-    Returns: objents divided
+    Returns: objects divided
     """
     err1 = "matrix must be a matrix (list of lists) of integers/floats"
     err2 = "Each row of the matrix must have the same size"
