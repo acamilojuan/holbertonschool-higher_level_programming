@@ -14,3 +14,12 @@ TEST
 		Traceback (most recent call last):
 			...
 		TypeError: text must be a string
+
+2: Text with special chars
+		>>> text_1 = "Juan:.?"
+		>>> text_indentation(text_1)
+		Juan:
+		<BLANKLINE>
+		.
+		<BLANKLINE>
+		?
