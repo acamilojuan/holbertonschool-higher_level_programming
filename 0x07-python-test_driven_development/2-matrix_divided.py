@@ -5,7 +5,7 @@
 def matrix_divided(matrix, div):
     """Method to divide the objents
     Arguments: matrix, div.
-    Raises: Errors depends on the case
+    Raises: Errors depends on the case.
     Returns: objents divided
     """
     err1 = "matrix must be a matrix (list of lists) of integers/floats"
