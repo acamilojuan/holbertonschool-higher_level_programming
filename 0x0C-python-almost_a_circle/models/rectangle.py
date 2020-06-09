@@ -70,8 +70,10 @@ class Rectangle(Base):
 
     def display(self):
         """Method to display char # in stdout"""
+        for a in range(self.__y):
+            print()
         for a in range(self.__height):
-                print('#' * self.__width)
+            print(" " * self.__x + '#' * self.__width)
 
     def __str__(self):
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(
