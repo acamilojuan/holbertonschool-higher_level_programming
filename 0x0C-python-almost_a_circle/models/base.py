@@ -36,5 +36,5 @@ class Base:
             for elem in list_objs:
                 aux = cls.to_dictionary(elem)
                 emptylist.append(aux)
-        with open(name, mode='w', encoding="utf-8") as xfile:
+        with open(name, mode='w', encoding="UTF8") as xfile:
             xfile.write(cls.to_json_string(emptylist))
