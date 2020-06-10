@@ -32,8 +32,9 @@ class Base:
         """
         name = cls.__name__ + '.json'
         emptylist = []
-        for elem in list_objs:
-            aux = cls.to_dictionary(elem)
-            emptylist.append(aux)
-        with open(name, mode='w', encoding="UTF8") as xfile:
+        if list_objs is not None:
+            for elem in list_objs:
+                aux = cls.to_dictionary(elem)
+                emptylist.append(aux)
+        with open(name, mode='w', encoding="utf-8") as xfile:
             xfile.write(cls.to_json_string(emptylist))
