@@ -80,6 +80,7 @@ class Rectangle(Base):
             self.id, self.__x, self.__y, self.__width, self.__height))
 
     def update(self, *args):
+        """Method to update the values of the instances"""
         list1 = ["id", "width", "height", "x", "y"]
         for arg in range(len(args)):
             setattr(self, list1[arg], args[arg])
