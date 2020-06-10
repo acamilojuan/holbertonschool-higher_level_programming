@@ -57,3 +57,20 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        name = cls.__name__ + '.json'
+        emptylist = []
+        list3 = []
+        try:
+            with open(name, mode='r', encoding='UTF8') as xfile:
+                aux = xfile.read()
+                emptylist = cls.from_json_string(aux)
+                """List of dicts"""
+                for elem in emptylist:
+                    aux2 = cls.create(**elem)
+                    list3.append(aux2)
+                return list3
+        except FileNotFoundError:
+            return emptylist
