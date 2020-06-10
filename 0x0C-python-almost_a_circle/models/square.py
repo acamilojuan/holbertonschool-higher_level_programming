@@ -35,3 +35,7 @@ class Square(Rectangle):
         else:
             for arg in range(len(args)):
                 setattr(self, list1[arg], args[arg])
+
+    def to_dictionary(self):
+        """Method to return the dictionary representation of a Square"""
+        return dict(x=self.x, y=self.y, id=self.id, size=self.width)
