@@ -23,3 +23,17 @@ class Base:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """Method to write the string rep in a file
+        Args: list_objs, cls.
+        Note: json.dumps() converts a Python obj to JSON string and writes
+        """
+        name = cls.__name__ + '.json'
+        emptylist = []
+        with open(name, mode='w', encoding="UTF8") as xfile:
+            for elem in list_objs:
+                aux = cls.to_dictionary(elem)
+                emptylist.append(aux)
+            xfile.write(cls.to_json_string(emptylist))
