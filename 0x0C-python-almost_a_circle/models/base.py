@@ -38,3 +38,13 @@ class Base:
                 emptylist.append(aux)
         with open(name, mode='w', encoding="UTF8") as xfile:
             xfile.write(cls.to_json_string(emptylist))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Method to return the list of JSON string rep"""
+        emptylist = []
+        if json_string is None or not json_string:
+            return emptylist
+        else:
+            aux = json.loads(json_string)
+            return aux
