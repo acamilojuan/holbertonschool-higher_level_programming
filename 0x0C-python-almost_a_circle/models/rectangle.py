@@ -79,8 +79,12 @@ class Rectangle(Base):
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Method to update the values of the instances"""
         list1 = ["id", "width", "height", "x", "y"]
-        for arg in range(len(args)):
-            setattr(self, list1[arg], args[arg])
+        if args is None or not args:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+        else:
+            for arg in range(len(args)):
+                setattr(self, list1[arg], args[arg])
