@@ -88,3 +88,8 @@ class Rectangle(Base):
         else:
             for arg in range(len(args)):
                 setattr(self, list1[arg], args[arg])
+
+    def to_dictionary(self):
+        """Method to return the dictionary representation of a Rectangle"""
+        return dict(x=self.__x, y=self.__y, id=self.id,
+                    height=self.__height, width=self.__width)
