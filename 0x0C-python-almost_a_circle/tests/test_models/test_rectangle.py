@@ -1,10 +1,14 @@
 #!/usr/bin/python3
+
+
 """Importing modules and classes needed to test
 Definition of cases
 """
 import unittest
 import pep8
 from models.base import Base
+from models.rectangle import Rectangle
+from models.square import Square
 
 
 class TestsBase(unittest.TestCase):

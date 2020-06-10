@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 """Importing modules and classes needed to test
 Definition of cases
 """
