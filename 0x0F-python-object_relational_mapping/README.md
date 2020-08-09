@@ -1,0 +1,1 @@
+*This is the Python - Object-relational mapping project's directory*
