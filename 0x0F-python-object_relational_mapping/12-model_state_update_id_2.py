@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Script that prints the State object with
-the name passed as argument from the database"""
+"""Script that changes the name of a State object from the database"""
 import sys
 from sqlalchemy import (create_engine)
 from model_state import Base, State
