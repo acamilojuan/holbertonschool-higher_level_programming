@@ -10,4 +10,4 @@ if __name__ == "__main__":
     data = urlencode({'email': sys.argv[2]})
     html = Request(sys.argv[1], data.encode('utf-8'))
     with urlopen(html) as response:
-        print("Your email is: {}".format(response.read().decode('utf-8')))
+        print(response.read().decode('utf-8'))
