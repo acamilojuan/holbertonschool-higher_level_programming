@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// Script that creates an empty class Rectangle that defines a rectangle //
+// Script that creates a class Rectangle that defines a rectangle //
 
 class Rectangle {
   constructor (w, h) {
