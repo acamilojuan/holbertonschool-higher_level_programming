@@ -1,7 +1,8 @@
-document.getElementById('red_header').onclick(function () {
-  if (window.$('header').hasClass('red')) {
-    window.$('header').toggleClass('green');
+const $ = window.$;
+$('DIV#toggle_header').click(function () {
+  if ($('header').hasClass('red')) {
+    $('header').toggleClass('green');
   } else {
-    window.$('header').toggleClass('red');
+    $('header').toggleClass('red');
   }
 });
