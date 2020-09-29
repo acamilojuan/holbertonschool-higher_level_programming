@@ -1,3 +1,4 @@
-document.getElementById('red_header').onclick(function () {
+const $ = window.$;
+$('DIV#red_header').click(function () {
   $(this).addClass('red');
 });
